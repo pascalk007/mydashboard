@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begrüßungsseite</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            position: relative;
+        }
+
+        .welcome-message {
+            font-size: 4em;
+            color: #333;
+            text-align: center;
+            border: 5px solid #2040cb;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .change-button {
+            font-size: 0.8em;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        .change-button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-message" id="welcomeMessage">
+        Herzlich Willkommen Fiona & Pascal
+    </div>
+    <button class="change-button" onclick="changeMessage()">Ändern</button>
+
+    <script>
+        function changeMessage() {
+            var newMessage = prompt("Bitte gib den neuen Begrüßungstext ein:");
+            if (newMessage) {
+                document.getElementById("welcomeMessage").innerText = newMessage;
+            }
+        }
+    </script>
+</body>
+</html>

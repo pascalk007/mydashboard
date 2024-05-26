@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1>Dashboard Fiona & Pascal</h1>
+        </header>
+        <main class="main">
+            <section class="widget weather-widget">
+                <h2>Wetter</h2>
+                <div id="weather">Lädt...</div>
+            </section>
+            <section class="widget quote-widget">
+                <h2>Spruch des Tages</h2>
+                <div id="quote">Lädt...</div>
+            </section>
+            <section class="widget time-widget">
+                <h2>Aktuelle Uhrzeit</h2>
+                <div id="time">Lädt...</div>
+                <br>
+                <div id="date">Lädt...</div>
+            </section>
+            <section class="widget welcome-link-widget">
+                <h2>Features</h2>
+                <button onclick="location.href='willkommen.html'">Begrüssung</button>
+                <button onclick="location.href='time.html'">Uhr</button>
+            </section>
+            <section class="widget notes-widget">
+                <h2>Notizen</h2>
+                <form id="note-form">
+                    <textarea id="note-input" placeholder="Notiz hinzufügen..." rows="1"></textarea>
+                    <button type="submit">Hinzufügen</button>
+                </form>
+                <ul id="notes-list"></ul>
+            </section>
+            <section class="widget links-widget">
+                <h2>Nützliche Links</h2>
+                <ul id="links">
+                    <li><a href="https://www.google.ch" target="_blank">Google Schweiz</a></li>
+                    <li><a href="https://www.sbb.ch" target="_blank">SBB Fahrplan</a></li>
+                    <li><a href="https://search.ch/meteo/prognosis/Winterthur" target="_blank">Wetter Niederschläge</a></li>
+                    <li><a href="https://www.google.ch/maps/@46.8358449,7.658535,9z?hl=de" target="_blank">Google Maps</a></li>
+                </ul>
+            </section>
+            <section class="widget links-widget">
+                <h2>Notion Links</h2>
+                <ul id="links">
+                    <li><a href="https://www.notion.so/Einkaufsliste-8a889403537a44bbb442434d16659e97" target="_blank">Einkaufsliste</a></li>
+                    <li><a href="https://www.notion.so/fa5914d4804944a7b02ccd1e7d5bc4c6?v=f90ddfb3013f4176af8f897e6626dd17" target="_blank">Projekte</a></li>
+                </ul>
+            </section>
+            <section class="widget links-widget">
+                <h2>Fiona Links</h2>
+                <ul id="links">
+                    <li><a href="https://www.google.ch" target="_blank">Google Schweiz</a></li>
+                </ul>
+            </section>
+            <section class="widget links-widget">
+                <h2>Pascal Links</h2>
+                <ul id="links">
+                    <li><a href="https://www.notion.so/db894126a2b742a69a338e82342db9a0?v=1947e2545563476cab8ea268f7b4f324" target="_blank">Notion</a></li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

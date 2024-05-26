@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    background-color: rgb(73, 105, 164);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.widget {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.widget h2 {
+    margin-top: 0;
+    color: #3f51b5;
+}
+
+#time {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+#date {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#links li {
+    margin: 10px 0;
+    text-align: left;
+}
+
+#links a {
+    color: #3f51b5;
+
+    
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
+
+.delete-note {
+    color: grey;
+    font-size: small;
+}
+
+.delete-note:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+#notes-list {
+    text-align: left;
+}
+
+.stock-widget {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+#stocks div {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
